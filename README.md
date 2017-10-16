@@ -1,2 +1,2 @@
-# nc-frontend-course
-Netcracker frontend development course code examples and snippets 
+# nc-js-course
+Netcracker frontend development course javascript code examples and snippets 
