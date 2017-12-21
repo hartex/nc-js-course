@@ -60,3 +60,6 @@ typings/
 .env
 
 
+# for all jetbrains products
+.idea
+
