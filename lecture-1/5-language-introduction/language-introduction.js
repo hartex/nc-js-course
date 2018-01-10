@@ -1,16 +1,20 @@
 /* 
+ -- statements:
 statement; 
 statement;
 statement
 statement
- */
 
-/*
-block statement: 
+ -- empty statements:
+;;;;
+
+ -- block statement: 
 {
     statement; 
     statement;
 }
+
+http://2ality.com/2012/09/expressions-vs-statements.html
 */
 
 /**
