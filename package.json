@@ -16,7 +16,7 @@
     "url": "https://github.com/hartex/nc-frontend-course/issues"
   },
   "homepage": "https://github.com/hartex/nc-frontend-course#readme",
-  "dependencies": {
+  "devDependencies": {
     "esprima": "^4.0.0"
   }
 }
