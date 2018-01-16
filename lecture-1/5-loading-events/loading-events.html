@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Script loading events examples</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon.ico">
+    <style>
+        img {
+            width: 15%
+        }
+    </style>
+    <script src="loading-events.js" type="text/javascript"></script>
+</head>
+<body>
+    <!-- resouce loading -->
+    <!-- <script>
+        loadScript();
+        loadImg();
+    </script> -->
+
+    <!-- DOM loading -->
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dignissimos blanditiis odit aspernatur laudantium
+        repudiandae molestiae totam. Quaerat velit numquam nemo earum facere architecto, consectetur ratione necessitatibus
+        molestiae illum nihil?</h1>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            console.info('DOM is ready, but not all images');
+        });
+    </script>
+
+    <img src="https://wallpaperscraft.ru/image/fudziyama_yaponiya_gorod_sakura_58475_3840x2400.jpg">
+    <h3>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi, dignissimos blanditiis odit aspernatur laudantium
+        repudiandae molestiae totam. Quaerat velit numquam nemo earum facere architecto, consectetur ratione necessitatibus
+        molestiae illum nihil?</h3>
+</body>
+</html>

@@ -3,4 +3,4 @@
  */
 var script = document.createElement('script');
 script.innerHTML = 'alert("hello world")';
-document.querySelector('body').appendChild(script);
+document.body.appendChild(script);

@@ -1,0 +1,22 @@
+{
+  "name": "nc-frontend-course",
+  "version": "1.0.0",
+  "description": "Netcracker frontend development course javascript code examples and snippets",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hartex/nc-frontend-course.git"
+  },
+  "author": "hartex",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hartex/nc-frontend-course/issues"
+  },
+  "homepage": "https://github.com/hartex/nc-frontend-course#readme",
+  "dependencies": {
+    "esprima": "^4.0.0"
+  }
+}

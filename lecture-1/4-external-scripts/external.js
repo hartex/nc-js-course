@@ -6,5 +6,5 @@ function addScriptDynamically(scriptUrl, scriptName) {
     var script = document.createElement('script');
     script.src = scriptUrl;
     script.onload = onScriptLoaded(scriptName);
-    document.querySelector('body').appendChild(script);
+    document.body.appendChild(script);
 }
