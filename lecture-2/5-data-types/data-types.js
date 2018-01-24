@@ -20,6 +20,8 @@ console.log(typeof symb);
 console.log(typeof null_);
 console.log(typeof undefined_);
 console.log(typeof obj);
+
+// function is not separate, it "extends" object
 console.log(typeof function () {
 });
 

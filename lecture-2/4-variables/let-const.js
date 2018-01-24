@@ -1,5 +1,6 @@
 // 1.let and const scope is block {...}
 
+// TODO: better examples needed
 let foo = 1;
 
 if (true) {

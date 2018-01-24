@@ -22,6 +22,8 @@ fooBar = 3; // ReferenceError
 // global scope
 var foo = 12313;
 
+// TODO: better examples needed
+
 // function scope
 function zzz() {
     var foo = 234234;
