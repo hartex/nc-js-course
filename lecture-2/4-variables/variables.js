@@ -20,7 +20,7 @@ fooBar = 3; // ReferenceError
 // var scope is global or function
 
 // global scope
-var aaaa = 12313;
+var foo = 12313;
 
 // function scope
 function zzz() {

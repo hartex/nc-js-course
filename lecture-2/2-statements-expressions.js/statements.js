@@ -19,7 +19,7 @@ statement
  -- block statement:
 */
 {
-    statement; 
+    statement;
     statement;
 }
 

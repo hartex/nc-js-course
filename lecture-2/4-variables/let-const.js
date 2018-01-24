@@ -7,7 +7,7 @@ if (true) {
     console.log(foo); // 10 inside block
 }
 
-console.log(foo) // 1 outside
+console.log(foo); // 1 outside
 
 // 2.let and const can be accessed only after declaration
 /* console.log(vvvv); //error
@@ -38,3 +38,4 @@ console.log(i); */
 } */
 
 // const creates immutable variable
+// const zz = 5;
