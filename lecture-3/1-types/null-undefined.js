@@ -1,8 +1,8 @@
 // how to get undefined
-var zz;
+let zz;
 console.log(zz);
 
-var obj = {}
+const obj = {};
 console.log(obj.zzz);
 
 function z(f) {

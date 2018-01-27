@@ -1,8 +1,6 @@
 // for loop
 // for ([initialExpression]; [condition]; [incrementExpression]) statement
-for (let step = 0; step < 5; step++) {
-    console.log(step);
-}
+for (let step = 0; step < 5; step++) console.log(step);
 
 // do/while
 let z = 0;
@@ -14,7 +12,7 @@ do {
 // while
 let n;
 while (n < 3) {
-    n++;
+    n += 1;
     console.log(n);
 }
 
@@ -34,10 +32,10 @@ for (let step = 0; step < 5; step++) {
 // for ... in
 // iterates over property names
 for (let vvv in {
-        a: 1,
-        b: 2,
-        c: 3
-    }) {
+    a: 1,
+    b: 2,
+    c: 3
+}) {
     console.log(vvv);
 }
 
