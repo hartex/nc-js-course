@@ -6,13 +6,13 @@ for (let step = 0; step < 5; step++) console.log(step);
 let z = 0;
 do {
     console.log(z);
-    z += 1;
+    z++;
 } while (z < 5);
 
 // while
 let n;
 while (n < 3) {
-    n += 1;
+    n++;
     console.log(n);
 }
 
