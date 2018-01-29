@@ -51,3 +51,15 @@ function kkk(number) {
 }
 
 console.log(kkk(2)(3));
+
+// ES6 default parameters
+function uuu(a, b = 22) {
+    console.log(a, b);
+}
+uuu(12);
+
+// pure functions
+function pureFunc(a, b, c) {
+    return 11 + 23 * a * b * c;
+}
+const result = pureFunc(2, 3, 1);
