@@ -7,7 +7,7 @@ const result = function fun(value) {
         return value;
     } else {
         return fun(value + 1);
-    };
+    }
 }(1);
 console.log(result);
 

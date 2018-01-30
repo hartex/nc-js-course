@@ -20,7 +20,7 @@ console.log(zzz.name, zzz.age);
 
 // strategy for arguments passing in JS called 'call-by-sharing'
 function ddd(prim, obj) {
-    prim = 333
+    prim = 333;
     obj.name = "dddddd";
 }
 const primitive = 222;

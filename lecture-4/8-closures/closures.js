@@ -1,5 +1,5 @@
 function zzz(name, age) {
-    const status = age > 18 ? 'adult' : 'underage'
+    const status = age > 18 ? 'adult' : 'underage';
     return function (surname) {
         return {
             name,
@@ -10,4 +10,4 @@ function zzz(name, age) {
     }
 }
 
-const z = zzz('John', 22);
+const z1 = zzz('John', 22);
