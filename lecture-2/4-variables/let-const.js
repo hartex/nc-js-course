@@ -32,11 +32,11 @@ for(let i = 0; i<10; i++) { console.log(i) } */
 console.log(i); */
 
 // it easy solves classic closure problem
-/* for(var fq = 0; fq<10; fq++) {
-    setTimeout(function(){
-        console.log(fq) 
+for(var fq = 0; fq < 10; fq++) {
+    setTimeout(function () {
+        console.log(fq)
     }, 1000)
-} */
+}
 
 // const creates immutable variable
 // const zz = 5;
