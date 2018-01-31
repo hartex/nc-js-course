@@ -1,3 +1,5 @@
+//"use strict";
+
 // call() and apply()
 function func(greeting) {
     return greeting + ' ' + this.name;
@@ -7,12 +9,12 @@ function func(greeting) {
 const john = {
     name: 'John',
     age: 23,
-}
+};
 
 const will = {
     name: 'Will',
     age: 22,
-}
+};
 
 func.call(john, 'Hi,');
 func.call(will, 'Hi');
@@ -26,14 +28,21 @@ func.apply(will, ['Hi,']);
 const vasya = {
     name: 'Vasya',
     hello: function () {
-        setTimeout(function () {
+        window.setTimeout(function () {
             console.log(this.name)
         }.bind(this), 1000)
     }
-}
+};
 
 vasya.hello();
+
 // also currying can be done with bind
+
+function multiply(a, b) {
+    return a * b;
+}
+
+const double = multiply.bind(null, 2);
 
 // call and apply doesn't works with arrow functions
 const arrowFunc = (greeting) => greeting + ' ' + this.name;

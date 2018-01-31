@@ -1,10 +1,10 @@
 // 'use strict';
 
+var bar = "global";
+
 function foo() {
     console.log(this.bar);
 }
-
-var bar = "global";
 
 var obj1 = {
     bar: "obj1",
@@ -36,14 +36,16 @@ new foo();
 // another example
 const obj3 = {
     name: 'john'
-}
+};
+
 const obj4 = {
     name: 'will'
-}
+};
 
 obj3.hello = function () {
     console.log('hello ' + this.name);
-}
+};
+
 obj4.hello = obj3.hello;
 
 obj3.hello();
@@ -51,11 +53,12 @@ obj4.hello();
 
 // arrow functions this is always static (defined by lexical environment)
 // so arrow function "this" is inherited from parent context
+
 var x = 10;
-let foo = {
+const foo = {
     x: 20,
     // dynamic "this"
-    bar() {
+    bar: function () {
         return this.x;
     },
     // lexical "this".
@@ -63,4 +66,4 @@ let foo = {
 };
 
 foo.bar();
-foo.baz()
+foo.baz();

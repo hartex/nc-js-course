@@ -1,10 +1,10 @@
-/* 
+/*
   all objects has inner hidden property [[Prototype]] 
   and we can access it using __proto__
  */
 const obj = {
     name: 'john'
-}
+};
 
 // by default objects get Object.prototype as a prototype
 obj.__proto__
@@ -24,7 +24,7 @@ let point3D = {
 /* 
   also can be created like that:
   let dict = Object.create(point);
-  dict.z = 30; 
+  dict.z = 30;
 
   or like that: 
   let dict = Object.create(point, {z: {value: 30}});

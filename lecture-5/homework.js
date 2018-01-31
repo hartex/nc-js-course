@@ -44,6 +44,7 @@ list.toString();
 list.reverse();
 
 // ----- advanced tasks ----- 
+
 list.sort();
 
 // you can experiment on that with "property descriptors"

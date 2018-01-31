@@ -23,6 +23,7 @@ const shape3 = {
     }
 };
 
+
 // with "new" it can be done like that:
 function Shape(x, y) {
     // __ that JS engine do under hood
@@ -35,6 +36,7 @@ function Shape(x, y) {
     // __ that JS engine do under hood
     // return this;
 }
+
 console.log(Shape.prototype.toString);
 console.log(Object.prototype.toLocaleString);
 

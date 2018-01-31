@@ -2,32 +2,36 @@
 const object = {
     name: 'sfdssdf',
     132: '1332',
+    obj: {
+        name: "dsfs"
+    },
     'asdsa': 12313,
     null: 1551,
-    hello: function(){
+    hello: function () {
         return 'hello';
-    }
-}
+    },
+};
 
 console.log(object.name);
 console.log(object['name']);
 
 object.name = 'john';
 object.aaaaa = 123321;
-object.func = function(){
+object.func = function () {
     return 'function';
-}
+};
+
 object.func();
 object.hello();
 
 // object creation using Object constructor
 const anotherObject = new Object();
-anotherObject.name = "james"
+anotherObject.name = "james";
 anotherObject.age = 21;
 
 // object creation using create() method
 const obj = Object.create(null);
-obj.name = 'will'
+obj.name = 'will';
 obj.age = 12;
 
 'name' in obj;
