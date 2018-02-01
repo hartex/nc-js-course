@@ -4,7 +4,7 @@
   "description": "Netcracker frontend development course javascript code examples and snippets",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/hartex/nc-frontend-course#readme",
   "devDependencies": {
-    "esprima": "^4.0.0"
+    "esprima": "^4.0.0",
+    "jest": "^22.1.4"
   }
 }
