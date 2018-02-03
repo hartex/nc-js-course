@@ -53,7 +53,7 @@ test('List contains() checks if an element exist in the list', () => {
     expect(list.contains('asdfasdf')).toBe(false);
 });
 
-test('List contains() returns correct string representation of the list', () => {
+test('List toString() returns correct string representation of the list', () => {
     expect(list.toString()).toBe('[1, 23, 44, "dsfs", {}]');
 });
 

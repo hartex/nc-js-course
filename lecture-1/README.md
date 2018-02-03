@@ -1,6 +1,9 @@
-# Content of lecture #1:
- - Intro to JS and ECMAScript specs
- - Logging
- - Script loading
- - Script execution concepts
- - Syntax parsers
+# Content of lecture #1
+
+- Intro to JS and ECMAScript specs
+- Console logging
+- Debugging
+- Script loading basics
+- Loading external scripts
+- Loading browser events
+- Syntax parsers

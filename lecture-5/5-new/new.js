@@ -37,14 +37,15 @@ function Shape(x, y) {
     // return this;
 }
 
-console.log(Shape.prototype.toString);
-console.log(Object.prototype.toLocaleString);
-
 Shape.prototype.toString = function () {
     console.log('Shape with x ' + this.x + 'and y:' + this.y);
 };
 
 const shape4 = new Shape(1, 2);
+
+console.log(Shape.prototype);
+
+// constructor is a special property of 
 console.log(shape4.constructor);
 
 shape4 instanceof Shape;

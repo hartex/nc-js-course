@@ -12,7 +12,9 @@ var obj1 = {
 };
 
 var obj2 = {
-    bar: "obj2"
+    bar: "obj2",
+    // JS interpreter doesn't set "this" here dynamically, like he does it with functions
+    v: this.bar
 };
 
 /* 

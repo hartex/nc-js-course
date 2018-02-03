@@ -11,16 +11,16 @@ if (true) {
 console.log(foo); // 1 outside
 
 // 2.let and const can be accessed only after declaration
-/* console.log(vvvv); //error
-let vvvv = 5; */
+console.log(vvvv); //error
+let vvvv = 5;
 
 //but it works with var
-/* console.log(qqqq); // undefined
-var qqqq = 5; */
+console.log(qqqq); // undefined
+var qqqq = 5;
 
 // let can't be declared twice
-/* let sss = 0;
-let sss = 0; */
+let sss = 0;
+let sss = 0;
 
 // 3. for let new cycle in for loop new variable is declared
 // it can be described as 'loop declaration scope'
