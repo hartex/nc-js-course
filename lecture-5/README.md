@@ -7,5 +7,4 @@
 - keyword "new"
 - Homework assignment "LinkedList implementation in JS"
 
-[<< Lecture #4](../lecture-4)
-[>> Lecture #6](../lecture-6)
+[<< Lecture #4](../lecture-4)  [Lecture #6 >>](../lecture-6)
