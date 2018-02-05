@@ -15,20 +15,24 @@ let point = {
     y: 20,
 };
 
+// object inheritance can be done like here
 // inherit it from base object
 let point3D = {
     z: 30,
     __proto__: point,
 };
 
-/* 
-  also can be created like that:
-  let dict = Object.create(point);
-  dict.z = 30;
 
-  or like that: 
-  let dict = Object.create(point, {z: {value: 30}});
-*/
+// also can be created like that:
+let dict1 = Object.create(point);
+dict1.z = 30;
+
+// or like that: 
+let dict2 = Object.create(point, {
+    z: {
+        value: 30
+    }
+});
 
 console.log(
     point3D.x, // 10, inherited
