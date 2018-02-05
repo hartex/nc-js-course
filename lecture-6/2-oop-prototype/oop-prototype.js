@@ -1,10 +1,10 @@
-// function constructor with its prototype property can be called class
+// function constructor with its prototype property can be called "class"
 function Person(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
 }
 
-console.log(Person.prototype.constructor === Person);
+console.log(Person.prototype.constructor === Person); // true
 
 // common methods goes to prototype
 Person.prototype.sayHi = function () {
@@ -15,7 +15,7 @@ Person.prototype.getFullName = function () {
     return `${this.firstName} ${this.lastName}`;
 };
 
-// static method
+// static methods goes to a function object
 Person.createAnonymous = function () {
     return new Person('Anonymous');
 };
@@ -26,8 +26,10 @@ Person.createAnonymous = function () {
  */
 const jack = new Person('Jack', 'Williamson');
 console.log(jack.sayHi());
+
 jack.__proto__ === Person.prototype; // true
 Person.prototype.constructor === Person; // true
+
 const anon = Person.createAnonymous();
 
 function Employee(firstName, lastName, salary) {
@@ -39,7 +41,6 @@ function Employee(firstName, lastName, salary) {
 // john -> Employee.prototype -> Person.prototype
 // so we can do:
 Employee.prototype = Object.create(Person.prototype);
-Employee.prototype.constructor = Person;
 
 Employee.prototype.getSalaryAndGreeting = function () {
     return `${this.sayHi()} and my salary is ${this.salary}`;

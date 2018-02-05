@@ -46,4 +46,4 @@ const john = new Employee('John', 'Doe', 1000);
 console.log(john.sayHi());
 console.log(john.getSalaryAndGreeting());
 
-console.log(Employee.prototype.__proto__ === Person.prototype);
+console.log(Employee.prototype.__proto__ === Person.prototype); // true
