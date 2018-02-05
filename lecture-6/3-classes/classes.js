@@ -25,6 +25,7 @@ class Person {
 
 const jack = new Person('Jack', 'Williamson');
 jack.sayHi();
+jack.fullName = 'sdf';
 const anon = Person.createAnonymous();
 
 // prototype chain goes here

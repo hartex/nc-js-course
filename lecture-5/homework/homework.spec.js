@@ -37,9 +37,10 @@ test('List unshift() adds one or more elements at the beginning if the list', ()
 });
 
 test('List pop() removes one element from the end of the list and returns it', () => {
+    list.pop();
     const lastElement = list.pop();
-    expect(list.length).toBe(4);
-    expect(lastElement).toBe({});
+    expect(list.length).toBe(3);
+    expect(lastElement).toBe('dsfs');
 });
 
 test('List shift() removes one element from the beginning of the list and returns it', () => {

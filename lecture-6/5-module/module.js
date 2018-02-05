@@ -6,8 +6,8 @@ export {
     zzz as hhh
 };
 
-export class Person {};
+export class Person {}
 
 export function sayHi() {
    console.log("hi");
-};
+}

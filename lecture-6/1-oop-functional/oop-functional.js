@@ -4,8 +4,8 @@ function Person(firstName, lastName) {
     this.lastName = lastName;
 
     this.sayHi = function () {
-        return `Hi, my name is ${this.getFullName()}`
-    }
+        return `Hi, my name is ${this.getFullName()}`;
+    };
 
     this.getFullName = function () {
         return `${this.firstName} ${this.lastName}`;
@@ -14,7 +14,7 @@ function Person(firstName, lastName) {
 
 Person.createAnonymous = function () {
     return new Person('Anonymous', '');
-}
+};
 
 const jack = new Person('Jack', 'Williamson');
 jack.sayHi();
