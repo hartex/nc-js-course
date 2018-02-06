@@ -40,7 +40,7 @@ list.contains('sdfs');
 // returns string representation of a list
 list.toString();
 
-// reverse list
+// reverse list and returns it
 list.reverse();
 
 // ----- advanced tasks (implementation is optional) ----- 
