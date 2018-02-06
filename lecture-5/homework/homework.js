@@ -43,11 +43,12 @@ list.toString();
 // reverse list
 list.reverse();
 
-// ----- advanced tasks ----- 
+// ----- advanced tasks (implementation is optional) ----- 
 
+// sort list semantically (using < or >)
 list.sort();
 
-// you can experiment on that with "property descriptors"
-for (i in list) {
+// it can be done using "ES6 iterators https://learn.javascript.ru/iterator
+for (let i of list) {
   console.log(i);
 }
