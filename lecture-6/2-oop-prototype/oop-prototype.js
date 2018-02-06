@@ -41,6 +41,7 @@ function Employee(firstName, lastName, salary) {
 // john -> Employee.prototype -> Person.prototype
 // so we can do:
 Employee.prototype = Object.create(Person.prototype);
+Employee.prototype.constructor = Employee;
 
 Employee.prototype.getSalaryAndGreeting = function () {
     return `${this.sayHi()} and my salary is ${this.salary}`;
