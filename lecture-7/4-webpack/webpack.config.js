@@ -11,16 +11,18 @@ const config = {
     // loaders with rules
     module: {
         rules: [{
+            enforce: 'pre',
             test: /\.js$/,
             use: [{
                 loader: 'babel-loader',
                 options: {
                     presets: ['@babel/preset-env']
                 }
-            }, "source-map-loader"],
-            exclude: /(node_modules)/,
+            },
+            {
+                loader: 'source-map-loader'
+            }]
         }]
-
     },
     // plugins
     plugins: [
