@@ -1,3 +1,5 @@
+import someConst from "./another-module.js";
+
 export const aaa = 1;
 
 const zzz = 1;
@@ -9,5 +11,5 @@ export {
 export class Person {}
 
 export function sayHi() {
-   console.log("hi");
+    console.log("hi " + someConst);
 }

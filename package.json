@@ -2,9 +2,10 @@
   "name": "nc-frontend-course",
   "version": "1.0.0",
   "description": "Netcracker frontend development course javascript code examples and snippets",
-  "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "hi": "echo 'hi there'",
+    "bundle": "webpack --config ./lecture-7/4-webpack/webpack.config.js"
   },
   "repository": {
     "type": "git",
@@ -16,8 +17,17 @@
     "url": "https://github.com/hartex/nc-frontend-course/issues"
   },
   "homepage": "https://github.com/hartex/nc-frontend-course#readme",
+  "dependencies": {
+    "lodash": "^4.17.5"
+  },
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.39",
+    "@babel/preset-env": "^7.0.0-beta.39",
+    "babel-loader": "^8.0.0-beta.0",
+    "babel-preset-env": "^1.6.1",
     "esprima": "^4.0.0",
-    "jest": "^22.1.4"
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^22.1.4",
+    "webpack": "^3.10.0"
   }
 }
