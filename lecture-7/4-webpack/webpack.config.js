@@ -12,12 +12,12 @@ const config = {
     module: {
         rules: [{
             test: /\.js$/,
-            use: {
+            use: [{
                 loader: 'babel-loader',
                 options: {
                     presets: ['@babel/preset-env']
                 }
-            },
+            }, "source-map-loader"],
             exclude: /(node_modules)/,
         }]
 
@@ -28,7 +28,8 @@ const config = {
         new HtmlWebpackPlugin({
             template: './webpack.html'
         })
-    ]
+    ],
+    devtool: "source-map",
 };
 
 module.exports = config;
