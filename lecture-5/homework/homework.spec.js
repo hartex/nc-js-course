@@ -55,9 +55,12 @@ test('List contains() checks if an element exist in the list', () => {
 });
 
 test('List toString() returns correct string representation of the list', () => {
-    expect(list.toString()).toBe('[1, 23, 44, "dsfs", {}]');
+    expect(list.toString()).toBe('[1,23,44,"dsfs",{}]');
 });
 
 test('List reverse() returns correct string representation of the list', () => {
-    expect(list.reverse().toString()).toBe('[{}, "dsfs", 44, 23, 1]');
+    const reversed = list.reverse();
+    expect(reversed.get(1)).toBe('dsfs');
+    expect(reversed.get(2)).toBe(44);
+    expect(reversed.tail.value).toBe(1);
 });

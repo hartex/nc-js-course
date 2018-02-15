@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/hartex/nc-frontend-course#readme",
   "dependencies": {
-    "lodash": "^4.17.5"
+    "lodash": "^4.17.5",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.39",

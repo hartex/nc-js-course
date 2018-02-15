@@ -63,3 +63,4 @@ typings/
 # for all jetbrains products
 .idea
 
+dist/

@@ -16,8 +16,8 @@ for (let i = 0; i < list.length; i++) {
   console.log(list.get(i));
 }
 
-// forEach on list
-list.forEach((element, index, array) => console.log(element));
+// forEach on list - iterates over all elements in list and invokes callback method for each element 
+list.forEach((element, index) => console.log(element));
 
 // set an element to specific position
 list.set(1, 'aaaaa');
@@ -28,10 +28,10 @@ list.push('dsdf', 12);
 // adds element or elements at the beginning of the list
 list.unshift('sdd', 222);
 
-// removes last element from the list
+// removes last element from the list and returns it
 list.pop();
 
-// removes first element from the list
+// removes first element from the list and returns it
 list.shift();
 
 // returns boolean
@@ -40,7 +40,7 @@ list.contains('sdfs');
 // returns string representation of a list
 list.toString();
 
-// reverse list and returns it
+// reverse list and returns it (or new list)
 list.reverse();
 
 // ----- advanced tasks (implementation is optional) ----- 
