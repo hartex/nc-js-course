@@ -22,7 +22,7 @@ const app = (
 );
 
 // same as above but using component
-function App(props){
+function App(props) {
     return (
         <div>
             <FunctionalComponent name="John" />

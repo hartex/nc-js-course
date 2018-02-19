@@ -18,15 +18,15 @@ const anotherJsx = (
     </div>
 );
 
-/* const zzz = [(
-    <h3 key="a">hi</h3>
-    <p key="b">another line</p>
-    <div key="c">and another line</div>)
-]; */
+const zzz = [
+    <h3 key="a">hi</h3>,
+    <p key="b">another line</p>,
+    <div key="c">and another line</div>
+];
 
 // JSX attributes
 // note that we use special names for attributes instead of html common attributes names
-const avatar = <img src={user.avatar} className="app-image"/>;
+const avatar = <img src={user.avatar} className="app-image" />;
 
 const app = (
     // embedding variables
