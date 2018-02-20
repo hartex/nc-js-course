@@ -34,7 +34,7 @@ const app = (
         {anotherJsx}
         {avatar}
     </div>
-)
+);
 
 ReactDOM.render(
     app,
