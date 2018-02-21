@@ -15,19 +15,14 @@ class Comment extends React.Component {
         };
 
         window.updateComment = (text) => {
-            this.setState({
-                comment: {
-                    text: text,
-                    date: new Date().toLocaleString(),
-                    user: {
-                        name: 'harold',
-                        avatar: 'https://naked-science.ru/sites/default/files/field/image/maxresdefault_60.jpg'
-                    }
-                }
-            })
+            this.setState((prevState) => {
+                const newState = Object.assign({}, prevState);
+                newState.comment.text = text;
+                newState.comment.date = new Date().toLocaleString();
+                return newState;
+            });
         }
     }
-
 
     render() {
         return (
@@ -43,7 +38,7 @@ class Comment extends React.Component {
 
 class UserProfile extends React.Component {
 
-    componentWillReceiveProps(nextProps){
+    componentWillReceiveProps(nextProps) {
         console.log(nextProps);
     }
 
