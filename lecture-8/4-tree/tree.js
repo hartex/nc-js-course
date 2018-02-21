@@ -14,13 +14,13 @@ class Comment extends React.Component {
             }
         };
 
-        window.updateUser = () => {
+        window.updateComment = (text) => {
             this.setState({
                 comment: {
-                    text: 'sdfsafdasdfsfgd fgdsgf sfgdf',
-                    date: '22.12.2013: 12:33',
+                    text: text,
+                    date: new Date().toLocaleString(),
                     user: {
-                        name: 'fdgsdfgdsfgsd',
+                        name: 'harold',
                         avatar: 'https://naked-science.ru/sites/default/files/field/image/maxresdefault_60.jpg'
                     }
                 }
@@ -42,6 +42,11 @@ class Comment extends React.Component {
 }
 
 class UserProfile extends React.Component {
+
+    componentWillReceiveProps(nextProps){
+        console.log(nextProps);
+    }
+
     render() {
         return (
             <div style={{border: '3px solid blue'}}>
