@@ -17,3 +17,7 @@ Functions in JavaScript, eval(), scope chain, Function Declarations and Function
 Object in JS, keyword "this" and keyword "new", Indirect functions invocation, prototype and homework assignment "LinkedList implementation in JS"
 6. [Lecture #6](./lecture-6)
 More on OOP in JavaScript: OOP in functional and in prototype styles, classes from ES6, object wrappers, modules (CommonJS and ES6 modules)
+7. [Lecture #7](./lecture-7)
+8. [Lecture #8](./lecture-8)
+9. [Lecture #9](./lecture-9)
+10. [Lecture #10](./lecture-10)

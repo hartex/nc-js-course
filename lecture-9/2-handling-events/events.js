@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Comment} from './Comment';
 
-class ToggbleComments extends React.Component {
+export class ToggbleComments extends React.Component {
     constructor(props) {
         super(props);
 
