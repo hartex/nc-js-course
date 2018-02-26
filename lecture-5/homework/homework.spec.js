@@ -58,7 +58,7 @@ test('List toString() returns correct string representation of the list', () => 
     expect(list.toString()).toBe('[1,23,44,"dsfs",{}]');
 });
 
-test('List reverse() returns correct string representation of the list', () => {
+test('List reverse() returns correctly reversed list', () => {
     const reversed = list.reverse();
     expect(reversed.get(1)).toBe('dsfs');
     expect(reversed.get(2)).toBe(44);
