@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#app-root {
+    flex-basis: 70%;
+    max-width: 900px;
+}
+
+.main-input {
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweet-list {
+    overflow-y: scroll;
+}
+
+.tweet {
+    font-size: 20px;
+    border: 1px solid rgb(228, 228, 228);
+    border-radius: 6px;
+    margin: 20px 0;
+    animation: show-tweet 1.5s ease-out;
+}
+
+@keyframes show-tweet {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.tweet .tweet-text {
+    margin: 20px;
+    overflow: scroll;
+}
+
+.tweet-info {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(228, 228, 228);
+    font-size: 17px;
+    padding: 7px 20px;
+}
+
+.tweet-info .avatar {
+    flex-basis: 10%
+}
+
+.tweet-info img {
+    width: 50%
+}
+
+.tweet-info span {
+    color: rgb(196, 194, 194);
+    font-size: 14px;
+    display: block;
+}

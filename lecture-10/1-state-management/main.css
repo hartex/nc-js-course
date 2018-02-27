@@ -3,11 +3,12 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 #app-root {
-    flex-basis: 70%
+    flex-basis: 70%;
+    max-width: 900px;
 }
 
 .main-input {
@@ -44,8 +45,8 @@ body {
 }
 
 .tweet .tweet-text {
-    display: inline-block;
     margin: 20px;
+    overflow: scroll;
 }
 
 .tweet-info {

@@ -6,11 +6,10 @@ export class TweetList extends React.Component {
 
     constructor(props) {
         super(props);
-        const tweets = AppStore.getState().tweets;
 
         this.state = {
             // initial tweet list
-            tweets: Array.from(tweets)
+            tweets: AppStore.getState().tweets
         }
     }
 
@@ -23,6 +22,6 @@ export class TweetList extends React.Component {
     }
 
     componentDidMount() {
-        AppStore.subscribe(action => this.setState(AppStore.getState().tweets))
+        AppStore.subscribe(() => this.setState({tweets: AppStore.getState().tweets}))
     }
 }
