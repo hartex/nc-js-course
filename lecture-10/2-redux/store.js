@@ -46,23 +46,17 @@ const tweets = [
     }
 ];
 
-const tweetReducer = function (state, action) {
+const tweetReducer = function (state = tweets, action) {
     const newState = Object.assign({}, state);
-    /*if (state === undefined) {
-        newState.tweets = tweets;
-    }*/
+
     if (action.type === 'ADD_TWEET') {
         newState.tweets.push(action.tweet);
     }
     return newState;
 };
 
-const userReducer = function (state, action) {
-    const newState = Object.assign({}, state);
-    /*if (state === undefined) {
-        newState.users = users;
-    }*/
-    return newState;
+const userReducer = function (state = users, action) {
+    return Object.assign({}, state);
 };
 
 const reducers = combineReducers({
@@ -70,6 +64,6 @@ const reducers = combineReducers({
     users: userReducer
 });
 
-const AppStore = createStore(reducers, {tweets: tweets, users: users});
+const AppStore = createStore(reducers);
 
 export default AppStore;

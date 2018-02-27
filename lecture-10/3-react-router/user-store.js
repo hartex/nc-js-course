@@ -1,9 +1,10 @@
 const UserStore = {
-    data: [{
-        id: 123123,
-        name: 'user 1',
-        age: 22
-    },
+    data: [
+        {
+            id: 123123,
+            name: 'user 1',
+            age: 22
+        },
         {
             id: 1231555,
             name: 'user 2',
@@ -18,7 +19,8 @@ const UserStore = {
             id: 123333,
             name: 'user 4',
             age: 12
-        }],
+        }
+    ],
 
     getUserById: function (id) {
         return this.data.find(element => element.id === id);

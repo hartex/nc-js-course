@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, Route } from 'react-router-dom';
-import UserStore from './user-store';
+import UserStore from '../user-store';
 import User from "./User";
 
 const UserList = (props) => (

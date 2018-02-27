@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { TweetList } from './TweetList';
-import { MainInput } from './MainInput';
+import { TweetList } from './components/TweetList';
+import { MainInput } from './components/MainInput';
 
 const App = (
     <div className="app">

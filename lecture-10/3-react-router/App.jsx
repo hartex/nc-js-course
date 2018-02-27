@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
-import Login from './Login';
-import Dashboard from './Dashboard';
-import Account from './Account';
-import UserList from './UserList';
+import Login from './components/Login';
+import Dashboard from './components/Dashboard';
+import Account from './components/Account';
+import UserList from './components/UserList';
 
-const App = () => (
+const App = (props) => (
     <div>
         <nav>
             <Link to="/dashboard">Dashboard</Link>

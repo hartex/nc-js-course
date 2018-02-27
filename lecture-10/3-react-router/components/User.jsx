@@ -1,5 +1,5 @@
 import React from 'react';
-import UserStore from "./user-store";
+import UserStore from "../user-store";
 
 const User = (props) => {
     if (props.match) {
