@@ -1,4 +1,4 @@
-# Content of lecture #11
+# Content of lecture #12
 
 
-[<< Lecture #10](../lecture-10) | [Lecture #12 >>](../lecture-12)
+[<< Lecture #11](../lecture-11)
