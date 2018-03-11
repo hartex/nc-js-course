@@ -10,9 +10,10 @@ const firebaseConfig = {
 };
 
 const FirebaseApp = firebase.initializeApp(firebaseConfig);
-const UsersDB = FirebaseApp.database().ref('users');
-const TweetsDB = FirebaseApp.database().ref('tweets');
+
+const UsersRef = FirebaseApp.database().ref('users');
+const TweetsRef = FirebaseApp.database().ref('tweets');
 
 export default FirebaseApp;
-export { UsersDB, TweetsDB };
+export { UsersRef, TweetsRef };
 

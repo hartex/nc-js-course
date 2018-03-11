@@ -56,6 +56,10 @@ body {
     font-size: 17px;
     padding: 7px 20px;
 }
+.tweet-info button {
+    cursor: pointer;
+    flex-basis: 5%;
+}
 
 .tweet-info .avatar {
     flex-basis: 10%

@@ -1,5 +1,5 @@
 import React from 'react';
-import AppStore from '../store';
+import AppStore from '../store/store';
 
 export class MainInput extends React.Component {
 

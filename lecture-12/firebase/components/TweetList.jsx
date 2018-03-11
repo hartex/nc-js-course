@@ -1,6 +1,6 @@
 import React from 'react';
 import { Tweet } from './Tweet';
-import AppStore from '../store';
+import AppStore from '../store/store';
 
 export class TweetList extends React.Component {
 
@@ -16,7 +16,7 @@ export class TweetList extends React.Component {
     render() {
         return (
             <div className="tweet-list">
-                {this.state.tweets.map(tweet => <Tweet key={tweet.id} data={tweet}/>)}
+                {this.state.tweets.map(tweet => <Tweet key={tweet.id} tweet={tweet}/>)}
             </div>
         )
     }
