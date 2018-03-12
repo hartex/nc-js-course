@@ -4,16 +4,20 @@ import AppData from "../../data/app-db";
 const tweetReducer = function (state = initialState.tweets, action) {
     switch (action.type) {
         case 'INITIALIZE_TWEETS':
-            action.tweets.forEach(a => state.push(a));
+            action.tweets.forEach(a => state.unshift(a));
             break;
         case 'ADD_TWEET':
-            state.unshift(action.tweet);
             AppData.addTweet(action.tweet);
             break;
+        case 'TWEET_ADDED':
+            state.unshift(action.tweet);
+            break;
         case 'REMOVE_TWEET':
-            const tweetIndex = state.findIndex(tweet => tweet.id === action.tweetId);
+            // state = state.filter(tweet => tweet.id !== action.tweetId);
+            AppData.removeTweet(action.tweetId);
+            break;
+        case 'TWEET_REMOVED':
             state = state.filter(tweet => tweet.id !== action.tweetId);
-            AppData.removeTweet(tweetIndex);
             break;
     }
 

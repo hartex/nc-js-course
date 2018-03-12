@@ -1,5 +1,6 @@
 import React from 'react';
 import AppStore from '../store/store';
+import { addNewTweetAction } from "../store/actions";
 
 export class MainInput extends React.Component {
 
@@ -18,18 +19,8 @@ export class MainInput extends React.Component {
         if (event.key === 'Enter') {
             const inputValue = event.target.value;
             if (inputValue) {
-
-                const newTweet = {
-                    type: 'ADD_TWEET',
-                    tweet: {
-                        id: Math.floor(Math.random() * (100000 - 10000) + 10000),
-                        userId: AppStore.getState().users[0].id,
-                        text: inputValue,
-                        date_added: new Date().toLocaleString().slice(0, -3)
-                    }
-                };
-
-                AppStore.dispatch(newTweet);
+                AppStore.dispatch(addNewTweetAction(inputValue));
+                // example of so called "uncontrolled components" in React
                 this.inputElement.value = "";
             }
         }

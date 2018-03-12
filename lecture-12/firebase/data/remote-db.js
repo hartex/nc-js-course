@@ -14,6 +14,9 @@ const FirebaseApp = firebase.initializeApp(firebaseConfig);
 const UsersRef = FirebaseApp.database().ref('users');
 const TweetsRef = FirebaseApp.database().ref('tweets');
 
+const UserRef = (userId) => FirebaseApp.database().ref('users/' + userId);
+const TweetRef = (tweetId) => FirebaseApp.database().ref('tweets/' + tweetId);
+
 export default FirebaseApp;
-export { UsersRef, TweetsRef };
+export { UsersRef, TweetsRef, UserRef, TweetRef };
 
