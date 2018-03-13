@@ -23,10 +23,6 @@ body {
     flex-direction: column;
 }
 
-.tweet-list {
-    overflow-y: scroll;
-}
-
 .tweet {
     font-size: 20px;
     border: 1px solid rgb(228, 228, 228);
@@ -46,7 +42,6 @@ body {
 
 .tweet .tweet-text {
     margin: 20px;
-    overflow: scroll;
 }
 
 .tweet-info {

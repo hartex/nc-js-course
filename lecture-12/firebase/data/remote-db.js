@@ -1,12 +1,12 @@
 import * as firebase from 'firebase';
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAo8PS77pLLqWTPrBn5I892e0m0y6fNkIk",
-    authDomain: "easy-tweeter.firebaseapp.com",
-    databaseURL: "https://easy-tweeter.firebaseio.com",
-    projectId: "easy-tweeter",
-    storageBucket: "easy-tweeter.appspot.com",
-    messagingSenderId: "633445271087"
+    apiKey: "AIzaSyCbF1tlkiWbnGFypR-3fYiCFwxEZSPmfTk",
+    authDomain: "easy-twitter.firebaseapp.com",
+    databaseURL: "https://easy-twitter.firebaseio.com",
+    projectId: "easy-twitter",
+    storageBucket: "",
+    messagingSenderId: "6588771267"
 };
 
 const FirebaseApp = firebase.initializeApp(firebaseConfig);
