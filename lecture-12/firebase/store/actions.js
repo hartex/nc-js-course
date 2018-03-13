@@ -1,5 +1,12 @@
 import AppStore from "./store";
 
+export function initializeUsersAction(users) {
+    return {
+        type: 'INITIALIZE_USERS',
+        users
+    }
+}
+
 export function initializeTweetsAction(tweets) {
     return {
         type: 'INITIALIZE_TWEETS',

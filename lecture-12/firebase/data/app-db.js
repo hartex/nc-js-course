@@ -1,16 +1,16 @@
 import { UsersRef, TweetsRef, TweetRef } from './remote-db';
 import AppStore from '../store/store';
-import { initializeTweetsAction, tweetAddedAction, tweetRemovedAction } from "../store/actions";
+import {
+    initializeTweetsAction,
+    initializeUsersAction,
+    tweetAddedAction,
+    tweetRemovedAction
+} from "../store/actions";
 
 const AppDB = {
     init() {
-        UsersRef.once('value').then((snapshot) => {
-            const result = {
-                type: 'INITIALIZE_USERS',
-                users: Object.values(snapshot.val())
-            };
-            AppStore.dispatch(result);
-        });
+        UsersRef.once('value').then((snapshot) =>
+            AppStore.dispatch(initializeUsersAction(Object.values(snapshot.val()))));
 
         TweetsRef.once('value').then((snapshot) =>
             AppStore.dispatch(initializeTweetsAction(Object.values(snapshot.val()))))

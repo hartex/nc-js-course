@@ -13,7 +13,6 @@ const tweetReducer = function (state = initialState.tweets, action) {
             state.unshift(action.tweet);
             break;
         case 'REMOVE_TWEET':
-            // state = state.filter(tweet => tweet.id !== action.tweetId);
             AppData.removeTweet(action.tweetId);
             break;
         case 'TWEET_REMOVED':
