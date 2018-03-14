@@ -1,5 +1,7 @@
 # Content of lecture #2
 
+## Intro to basics of JS
+
 - "use strict"
 - Statements and expressions
 - Operators

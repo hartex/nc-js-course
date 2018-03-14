@@ -1,5 +1,7 @@
 # Content of lecture #5
 
+## All about objects in JS
+
 - Object in general in JS
 - keyword "this"
 - Indirect invocation of functions

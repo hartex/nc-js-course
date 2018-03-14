@@ -1,5 +1,7 @@
 # Content of lecture #4
 
+## All about functions in JS
+
 - Functions in JavaScript
 - Scope chain
 - eval() function

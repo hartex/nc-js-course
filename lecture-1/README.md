@@ -1,5 +1,7 @@
 # Content of lecture #1
 
+## Before we start
+
 - Intro to JS and ECMAScript specs
 - Console logging
 - Debugging

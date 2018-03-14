@@ -1,5 +1,7 @@
 # Content of lecture #6
 
+## OOP and inheritance in JS
+
 - OOP in general, core concepts and SOLID
 - OOP in JS in functional style
 - OOP in JS in old-school prototype style
