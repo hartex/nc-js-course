@@ -1,9 +1,9 @@
 # nc-js-course
 
-[Netcracker's](https://www.netcracker.com/) frontend development course JavaScript code examples and snippets.
+This repository contains code examples for [Netcracker's](https://www.netcracker.com/) [frontend development course](http://nn.edu-netcracker.com/).
 That part of the course consist of 12 lectures about JavaScript, front-end development and it's modern ecosystem.
 
-Course structure:
+## Course structure
 
 1. [Lecture #1](./lecture-1)
 Introduction to JavaScript and it's specifications, console logging, debugging in browser, "script" tag, script loading and parsing.
@@ -30,4 +30,24 @@ Introduction to HTTP protocol and how to access server-side data in modern web a
 12. [Lecture #12](./lecture-12)
 Building full-fledged application (like Twitter) using React, Redux and Firebase as a persistent storage, also introduction to Firebase.
 
-How to run examples:
+## How to run examples
+
+Most of the examples can be run just by opening corresponding HTML files, but examples from lectures 9-12 need an additional build steps (compiling using [babel](http://babeljs.io/)) before running, so you should execute the following steps:
+
+- install all project dependencies
+
+```sh
+$ npm install
+```
+
+ - install [parcel](https://parceljs.org/) globally
+
+```sh
+$ npm install -g parcel-bundler
+```
+
+ - run parcel from the project root directory, passing specific HTML file as an input
+
+```sh
+$ parcel lecture-9/1-lifecycle-hooks/lifecycle.html
+```
