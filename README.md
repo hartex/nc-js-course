@@ -32,7 +32,7 @@ Building full-fledged application (like Twitter) using React, Redux and Firebase
 
 ## How to run examples
 
-Most of the examples can be run just by opening corresponding HTML files, but examples from lectures 9-12 need an additional build steps (compiling using [babel](http://babeljs.io/)) before running, so you should execute the following steps:
+Most of the examples can be run just by opening corresponding HTML files, but examples from lectures 9-12 need an additional build steps (compiling using [babel](http://babeljs.io/)) before running, so you should execute the following:
 
 - install all project dependencies
 
