@@ -10,7 +10,7 @@ Introduction to JavaScript and it's specifications, console logging, debugging i
 2. [Lecture #2](./lecture-2)
 Modern standard "use strict", statements and expressions, operators, variable and data types in JavaScript.
 3. [Lecture #3](./lecture-3)
-More on data types and types conversion in JavaScript, control flow statements (branching operators,loops and arrays.
+More on data types and types conversion in JavaScript, control flow statements (branching operators, loops and arrays).
 4. [Lecture #4](./lecture-4)
 Functions in JavaScript, eval(), scope chain, Function Declarations and Function Expressions, Immediately invoked function expressions, recursion and call stack, closures and arrow functions.
 5. [Lecture #5](./lecture-5)
